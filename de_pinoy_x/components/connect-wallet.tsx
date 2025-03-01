@@ -2,5 +2,10 @@ import { ConnectButton } from "@rainbow-me/rainbowkit";
 import React from "react";
 
 export default function ConnectWallet() {
-  return <ConnectButton />;
+  return (
+    <div className="connect-wallet">
+      <ConnectButton />
+    </div>
+  );
 }
+

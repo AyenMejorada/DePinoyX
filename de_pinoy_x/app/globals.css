@@ -109,7 +109,20 @@
   }
 }
 
-
+.connect-wallet button {
+  background: none;
+  border: 2px solid #FF9311;
+  color: #E3E3E3;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  font-weight: 600;
+  border-radius: 30px;
+}
+.connect-wallet button:hover {
+  background: #FF9311;
+  color: #242526;
+}
 
 @layer base {
   * {

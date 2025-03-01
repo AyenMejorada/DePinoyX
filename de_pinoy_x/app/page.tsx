@@ -53,7 +53,7 @@ export default function Home() {
   }
   return (
     <>
-      <div className="flex flex-col gap-32 min-h-screen justify-between">
+      <div className="flex flex-col min-h-screen justify-between bg-[#121212] text-[#E3E3E3] font-[Poppins]">
         <Navbar />
         <div className="w-full flex items-center justify-center">
           <div className="w-full max-w-[1440px] flex flex-col gap-32">
