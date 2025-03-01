@@ -1,0 +1,7 @@
+node_modules/
+.cache/
+artifacts/
+coverage/
+hardhat.config.ts
+hardhat.config.js
+.env
