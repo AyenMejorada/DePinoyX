@@ -227,6 +227,45 @@
       "artifacts": [
         "IERC20Metadata"
       ]
+    },
+    "/home/nico/DePinoyX/contracts/colorgame.sol": {
+      "lastModificationDate": 1740828268890,
+      "contentHash": "d74ff70a67aaedd4401ca8410d0c8ef8",
+      "sourceName": "contracts/colorgame.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ColorGame",
+        "ISwitchboard"
+      ]
     }
   }
 }

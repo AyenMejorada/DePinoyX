@@ -6,6 +6,26 @@
     "hardhat": "^2.22.19"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^5.2.0"
-  }
+    "@openzeppelin/contracts": "^5.2.0",
+    "@switchboard-xyz/on-demand-solidity": "^0.0.4",
+    "crypto": "^1.0.1",
+    "ethers": "^6.13.5"
+  },
+  "version": "1.0.0",
+  "main": "DPXscript.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AyenMejorada/DePinoyX.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AyenMejorada/DePinoyX/issues"
+  },
+  "homepage": "https://github.com/AyenMejorada/DePinoyX#readme",
+  "description": ""
 }
