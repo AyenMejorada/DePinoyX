@@ -109,22 +109,141 @@
   }
 }
 
-.connect-wallet button {
-  background: none;
+.connect-wallet button, 
+.rainbowkit-connect-button {
+  background: transparent !important;
+  border: 2px solid #FF9311 !important;
+  color: #FF9311 !important;
+  padding: 10px 30px !important;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s !important;
+  font-weight: 600 !important;
+  border-radius: 30px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.connect-wallet button:hover,
+.rainbowkit-connect-button:hover {
+  background: #FF9311 !important;
+  color: #242526 !important;
+}
+
+
+/* Default styles for the color selection buttons */
+.choose-colors-button {
+  background: transparent;
   border: 2px solid #FF9311;
-  color: #E3E3E3;
-  padding: 10px 30px;
+  color: #FF9311;
+  padding: 10px 20px;
   cursor: pointer;
   transition: background 0.3s, color 0.3s;
   font-weight: 600;
-  border-radius: 30px;
+  border-radius: 8px;
 }
-.connect-wallet button:hover {
+
+/* Hover effect */
+.choose-colors-button:not(:disabled):hover {
   background: #FF9311;
   color: #242526;
 }
 
+/* Disabled state */
+.choose-colors-button:disabled {
+  opacity: 0.5;
+  border-color: #888888;
+  color: #888888;
+  cursor: not-allowed;
+}
+
+.color-button.selected {
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8), 0 0 15px rgba(255, 255, 255, 0.8);
+  transform: scale(0.95); /* Optional for 'pressed' feel */
+}
+
+.color-red:not(:disabled) {
+  background-color: #FF4500;
+  box-shadow: 0 0 15px #FF4500;
+}
+.color-blue:not(:disabled) {
+  background-color: #00E6FF;
+  box-shadow: 0 0 15px #00E6FF;
+}
+.color-green:not(:disabled) {
+  background-color: #00FF57;
+  box-shadow: 0 0 15px #00FF57;
+}
+.color-pink:not(:disabled) {
+  background-color: #FF00F5;
+  box-shadow: 0 0 15px #FF00F5;
+}
+.color-yellow:not(:disabled) {
+  background-color: #FFF500;
+  box-shadow: 0 0 15px #FFF500;
+}
+.color-purple:not(:disabled) {
+  background-color: #8A2BE2;
+  box-shadow: 0 0 15px #8A2BE2;
+}
+
+.selected {
+  border: 2px solid white;
+  box-shadow: 0 0 20px white;
+}
+
+/* Disabled color buttons */
+.color-red:disabled {
+  background-color: #FF4500;
+  opacity: 0.4;
+  box-shadow: inset 0 0 10px rgba(255, 69, 0, 0.7);
+  color: #2c2c2c;
+  cursor: not-allowed;
+}
+.color-blue:disabled {
+  background-color: #00E6FF;
+  opacity: 0.4;
+  box-shadow: inset 0 0 10px rgba(0, 230, 255, 0.7);
+  color: #2c2c2c;
+  cursor: not-allowed;
+}
+.color-green:disabled {
+  background-color: #00FF57;
+  opacity: 0.4;
+  box-shadow: inset 0 0 10px rgba(0, 255, 87, 0.7);
+  color: #2c2c2c;
+  cursor: not-allowed;
+}
+.color-pink:disabled {
+  background-color: #FF00F5;
+  opacity: 0.4;
+  box-shadow: inset 0 0 10px rgba(255, 0, 245, 0.7);
+  color: #2c2c2c;
+  cursor: not-allowed;
+}
+.color-yellow:disabled {
+  background-color: #FFF500;
+  opacity: 0.4;
+  box-shadow: inset 0 0 10px rgba(255, 245, 0, 0.7);
+  color: #2c2c2c;
+  cursor: not-allowed;
+}
+.color-purple:disabled {
+  background-color: #8A2BE2;
+  opacity: 0.4;
+  box-shadow: inset 0 0 10px rgba(138, 43, 226, 0.7);
+  color: #2c2c2c;
+  cursor: not-allowed;
+}
+
+.selected {
+  border: 2px solid white;
+  box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.7);
+}
+
 @layer base {
+  
   * {
     @apply border-border outline-ring/50;
   }
